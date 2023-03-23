@@ -22,16 +22,17 @@ TapNoteScores.Names = map(GetTNSStringFromTheme, TapNoteScores.Types)
 local RadarCategories = {
 	THEME:GetString("ScreenEvaluation", 'Hands'),
 	THEME:GetString("ScreenEvaluation", 'Holds'),
-	THEME:GetString("ScreenEvaluation", 'Mines'),
-	THEME:GetString("ScreenEvaluation", 'Rolls')
+	THEME:GetString("ScreenEvaluation", 'Rolls'),
+	THEME:GetString("ScreenEvaluation", 'Mines')
 }
 
 local EnglishRadarCategories = {
 	[THEME:GetString("ScreenEvaluation", 'Hands')] = "Hands",
 	[THEME:GetString("ScreenEvaluation", 'Holds')] = "Holds",
-	[THEME:GetString("ScreenEvaluation", 'Mines')] = "Mines",
 	[THEME:GetString("ScreenEvaluation", 'Rolls')] = "Rolls",
+	[THEME:GetString("ScreenEvaluation", 'Mines')] = "Mines",
 }
+
 
 local scores_table = {}
 for index, window in ipairs(TapNoteScores.Types) do
